@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f642240419968744fa1548fff5e8a0ce
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - protonPrefab: {instanceID: 0}
+  - neutronPrefab: {instanceID: 0}
+  - electronPrefab: {instanceID: 0}
+  - orbitRingPrefab: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
