@@ -30,7 +30,7 @@ public class AtomGenerator : MonoBehaviour
 
     void Start()
     {
-        GenerateAtom();
+       GenerateAtom();
     }
 
     [ContextMenu("Generate Atom")]
