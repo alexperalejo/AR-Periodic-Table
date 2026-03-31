@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  trellis2-server:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: trellis2-unity-studio:fixed
+    runtime: nvidia
+    ports:
+      - "8000:8000"
+      - "7860:7860"
+    volumes:
+      - ../outputs:/app/outputs
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      # For superfast mode performance
+      - MEMORY_MODE=keep_loaded
+      - PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+      # Ensure application source dir and vendor TRELLIS.2 are on Python path so imports work
+      - PYTHONPATH=/app/src:/app/vendor/TRELLIS.2
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
