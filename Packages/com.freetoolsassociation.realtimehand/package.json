@@ -1,0 +1,14 @@
+{
+  "name": "com.freetoolsassociation.realtimehand",
+  "displayName": "Realtime Hand",
+  "version": "1.0.0",
+  "description": "Realtime Hand",
+  "keywords": [
+    "unity"
+  ],
+  "type": "template",
+  "dependencies": {
+    "com.unity.xr.arfoundation": "6.3.2",
+    "com.unity.xr.arkit": "6.3.2"
+  }
+}

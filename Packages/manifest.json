@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "com.freetoolsassociation.realtimehand": "file:com.freetoolsassociation.realtimehand",
+    "com.freetoolsassociation.swiftsupport": "file:com.freetoolsassociation.swiftsupport",
+    "com.unity.cinemachine": "3.1.6",
     "com.unity.cloud.gltfast": "6.16.1",
     "com.unity.feature.development": "1.0.2",
     "com.unity.inputsystem": "1.17.0",
@@ -7,8 +10,12 @@
     "com.unity.mobile.android-logcat": "1.4.6",
     "com.unity.multiplayer.center": "1.0.1",
     "com.unity.nuget.newtonsoft-json": "3.2.2",
+    "com.unity.probuilder": "6.0.9",
     "com.unity.render-pipelines.universal": "17.3.0",
+    "com.unity.sdk.linux-x86_64": "1.0.2",
     "com.unity.timeline": "1.8.10",
+    "com.unity.toolchain.linux-x86_64-linux": "1.0.2",
+    "com.unity.visualeffectgraph": "17.3.0",
     "com.unity.xr.arcore": "6.3.2",
     "com.unity.xr.arfoundation": "6.3.2",
     "com.unity.xr.arkit": "6.3.2",

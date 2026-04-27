@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using PeriodicAR.Data;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -22,9 +23,7 @@ public class ElementTileSetup : MonoBehaviour
             foreach (AtomElementData el in table.elements)
             {
                 if (el.symbol.ToLower() == tileName ||
-                    el.name.ToLower() == tileName ||
-                    tileName == "hcube" && el.symbol.ToLower() == "h" ||
-                    tileName == "tl 1" && el.symbol.ToLower() == "tl")
+                    el.name.ToLower() == tileName)
                 {
                     ElementTile tile = child.gameObject.GetComponent<ElementTile>();
                     if (tile == null)

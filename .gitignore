@@ -73,6 +73,19 @@ mono_crash.*
 *.unitypackage.meta
 *.app
 
+# Xcode/iOS build outputs that Unity emits at the project root
+# (build1, build2, … build8 — these stack up from repeated "Build And Run"
+# invocations and are huge. They were the cause of the "No space left on
+# device" Xcode link failure.)
+/build[0-9]*/
+DerivedData/
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+
+# macOS Finder metadata
+.DS_Store
+Thumbs.db
+
 # Crashlytics generated file
 crashlytics-build.properties
 
@@ -97,3 +110,6 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# Claude Code local settings — personal overrides, not shared
+.claude/settings.local.json

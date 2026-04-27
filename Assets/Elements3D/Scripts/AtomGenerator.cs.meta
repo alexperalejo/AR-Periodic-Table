@@ -4,10 +4,10 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - protonPrefab: {instanceID: 0}
-  - neutronPrefab: {instanceID: 0}
-  - electronPrefab: {instanceID: 0}
-  - orbitRingPrefab: {instanceID: 0}
+  - protonPrefab: {fileID: 1251558293652914590, guid: 8f311be580bbfb24388986039c26b7af, type: 3}
+  - neutronPrefab: {fileID: 558369965511058211, guid: c84300638bf2c82489b4f3983b8d6f7d, type: 3}
+  - electronPrefab: {fileID: 5426548917952445512, guid: 6b6f29be24b076647954d696897784dc, type: 3}
+  - orbitRingPrefab: {fileID: 1570176492660083479, guid: d90d4dd797ae29f479f47e4a7f05821a, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
