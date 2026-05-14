@@ -18,6 +18,7 @@
 //
 // Self-bootstrapping. Delete this file to remove.
 
+/*
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -353,3 +354,4 @@ namespace PeriodicAR.UI
         }
     }
 }
+*/

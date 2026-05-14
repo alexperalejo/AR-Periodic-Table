@@ -1,5 +1,15 @@
 {
   "dependencies": {
+    "com.coplaydev.coplay": {
+      "version": "https://github.com/CoplayDev/unity-plugin.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.inputsystem": "1.1.1",
+        "com.unity.cloud.gltfast": "6.12.1"
+      },
+      "hash": "8fc764ffc1d3ccb7a0a9e9797c1ad239fce9edb2"
+    },
     "com.freetoolsassociation.realtimehand": {
       "version": "file:com.freetoolsassociation.realtimehand",
       "depth": 0,

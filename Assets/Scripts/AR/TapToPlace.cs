@@ -27,9 +27,13 @@ namespace PeriodicAR.AR
 
         [Header("Placement geometry")]
         [Tooltip("Absolute uniform scale applied to the spawned table.")]
-        [SerializeField] private float absoluteScale = 0.3f;
+        [SerializeField] private float absoluteScale = 0.4f;
+        [Tooltip("Height offset above the tapped plane (in meters).")]
+        [SerializeField] private float heightOffset = 1.2f;
         [Tooltip("World-space Euler rotation applied to the spawned object at placement time. Default values are the orientation that looks correct for pTableGroup (read off HandTableRotator's pill on a real device). Tweak here if you find a better orientation manually in the scene.")]
         [SerializeField] private Vector3 spawnRotationEuler = new Vector3(51.48f, -18.07f, 3.79f);
+        [Tooltip("If true, the table will be rotated around the Y axis to face the camera when placed.")]
+        [SerializeField] private bool faceCameraOnPlacement = true;
         [Tooltip("DEPRECATED — kept only for legacy serialization. New rotation logic uses spawnRotationEuler instead.")]
         [SerializeField] private Vector3 extraRotationEuler = new Vector3(0f, 0f, 0f);
 
@@ -63,9 +67,52 @@ namespace PeriodicAR.AR
         public GameObject CurrentInstance => _spawned;
         public bool HasSpawned => _spawned != null;
 
+        // ---- Lock state ----------------------------------------------------------------
+        private bool _tableLocked = false;
+        public bool IsLocked => _tableLocked;
+
+        /// <summary>Fires when the lock state changes (true = locked, false = unlocked).</summary>
+        public event Action<bool> LockChanged;
+
+        /// <summary>Prevent repositioning taps while the table is placed.</summary>
+        public void LockTable()
+        {
+            if (!HasSpawned) { Debug.LogWarning("[TapToPlace] LockTable called but no table is placed."); return; }
+            _tableLocked = true;
+            LockChanged?.Invoke(true);
+            Debug.Log("[TapToPlace] Table LOCKED — placement taps will be ignored.");
+        }
+
+        /// <summary>Re-allow repositioning after the table was locked.</summary>
+        public void UnlockTable()
+        {
+            _tableLocked = false;
+            LockChanged?.Invoke(false);
+            Debug.Log("[TapToPlace] Table UNLOCKED — repositioning enabled.");
+        }
+
+        /// <summary>
+        /// The Transform of the currently placed periodic table, or null if no table is placed.
+        /// Prefer subscribing to <see cref="TablePlaced"/>/<see cref="TableRemoved"/> for
+        /// event-driven updates; use this property for one-shot queries.
+        /// </summary>
+        public Transform PlacedTransform => _spawned != null ? _spawned.transform : null;
+
         public event Action<State> StateChanged;
         // Fires every time the next placement override is set or cleared (true=armed, false=cleared).
         public event Action<bool> PlacementOverrideChanged;
+
+        /// <summary>
+        /// Fires immediately after a new table is placed (or repositioned).
+        /// The argument is the spawned table's Transform — never null when this fires.
+        /// </summary>
+        public event Action<Transform> TablePlaced;
+
+        /// <summary>
+        /// Fires just before the current table is destroyed (via RemoveTable or reposition).
+        /// _spawned is still valid at the moment this fires.
+        /// </summary>
+        public event Action TableRemoved;
 
         // One-shot override. When non-null, the next placement will use this prefab/GameObject
         // INSTEAD of placePrefab. Cleared automatically after one placement. Auto-fit and
@@ -198,6 +245,13 @@ namespace PeriodicAR.AR
                 return;
             }
 
+            // Guard: suppress table placement while the user is dragging an AR world object.
+            if (ARWorldObjectManipulator.AnyDragging)
+            {
+                if (verboseLogging) Debug.Log("[TapToPlace] Tap suppressed: ARWorldObjectManipulator drag is active.");
+                return;
+            }
+
             // Use the press-start position so we don't get a slightly drifted release point.
             Vector2 screen = _pressStartPos;
 
@@ -237,8 +291,15 @@ namespace PeriodicAR.AR
             // Honour state machine semantics:
             //   Idle  → place (auto-arm so we don't strand the user without a HUD)
             //   Armed → place
-            //   Placed → reposition if allowed, otherwise ignore
+            //   Placed → reposition if allowed and not locked, otherwise ignore
             if (CurrentState == State.Placed && !allowRepositionOnTap) return;
+
+            // Lock guard: ignore repositioning taps when the table is locked.
+            if (CurrentState == State.Placed && _tableLocked)
+            {
+                if (verboseLogging) Debug.Log("[TapToPlace] Tap ignored: table is LOCKED.");
+                return;
+            }
 
             PlaceAt(_hits[0].pose);
         }
@@ -257,8 +318,19 @@ namespace PeriodicAR.AR
 
         public void RemoveTable()
         {
-            if (_spawned != null) Destroy(_spawned);
+            if (_spawned != null)
+            {
+                TableRemoved?.Invoke();          // notify before Destroy so listeners can still read the transform
+                Debug.Log("[TapToPlace] TableRemoved event fired.");
+                Destroy(_spawned);
+            }
             _spawned = null;
+            if (_tableLocked)
+            {
+                _tableLocked = false;
+                LockChanged?.Invoke(false);
+                Debug.Log("[TapToPlace] Lock cleared because table was removed.");
+            }
             SetState(State.Idle);
         }
 
@@ -273,7 +345,14 @@ namespace PeriodicAR.AR
                 Debug.LogError("[TapToPlace] No prefab to place — placePrefab is unassigned and no override is set.");
                 return;
             }
-            if (_spawned != null) Destroy(_spawned);
+            if (_spawned != null)
+            {
+                // Table is being repositioned — fire TableRemoved so listeners can clear their refs
+                // before the old instance is destroyed.
+                TableRemoved?.Invoke();
+                Debug.Log("[TapToPlace] TableRemoved event fired (reposition).");
+                Destroy(_spawned);
+            }
 
             // Rotation: spawn at the user-tuned spawnRotationEuler. Test cube override uses
             // identity. Reverted from the flat-layout LookRotation experiment because it
@@ -281,6 +360,24 @@ namespace PeriodicAR.AR
             Quaternion rot = isOverride
                 ? Quaternion.identity
                 : Quaternion.Euler(spawnRotationEuler);
+
+            if (!isOverride)
+            {
+                pose.position.y += heightOffset;
+                
+                if (faceCameraOnPlacement && arCamera != null)
+                {
+                    Vector3 toCamera = arCamera.transform.position - pose.position;
+                    toCamera.y = 0;
+                    if (toCamera.sqrMagnitude > 0.001f)
+                    {
+                        // The table's "front" is its -Z axis.
+                        // We want its -Z axis to point towards the camera, so +Z points away.
+                        float yaw = Quaternion.LookRotation(-toCamera.normalized).eulerAngles.y;
+                        rot = Quaternion.Euler(spawnRotationEuler.x, yaw, spawnRotationEuler.z);
+                    }
+                }
+            }
 
             _spawned = Instantiate(prefabToSpawn, pose.position, rot);
             // For overrides, do NOT mash scale or auto-fit — the caller passed exact geometry.
@@ -301,6 +398,8 @@ namespace PeriodicAR.AR
                     Vector3 sp2 = arCamera.WorldToScreenPoint(pose.position);
                     if (sp2.z > 0f) TapIndicator.Show(new Vector2(sp2.x, sp2.y), new Color(0.2f, 1f, 0.4f, 1f));
                 }
+                TablePlaced?.Invoke(_spawned.transform);
+                Debug.Log($"[TapToPlace] TablePlaced event fired for override '{_spawned.name}'.");
                 SetState(State.Placed);
                 return;
             }
@@ -396,7 +495,8 @@ namespace PeriodicAR.AR
                 Vector3 sp = arCamera.WorldToScreenPoint(pose.position);
                 if (sp.z > 0f) TapIndicator.Show(new Vector2(sp.x, sp.y), new Color(0.2f, 1f, 0.4f, 1f)); // green
             }
-            Debug.Log($"[TapToPlace] Placed table at {pose.position}");
+            TablePlaced?.Invoke(_spawned.transform);
+            Debug.Log($"[TapToPlace] Placed table at {pose.position} — TablePlaced event fired.");
             SetState(State.Placed);
         }
 

@@ -251,6 +251,17 @@ namespace PeriodicAR.UI
             if (_atomGeneratorRoot == null && _loader != null && _loader.atomGenerator != null)
                 _atomGeneratorRoot = _loader.atomGenerator.gameObject;
 
+            // Sync ElementLoader flags with the current ARMode so LoadElement shows
+            // the right content. Without this, showInfoCard/showAtom are whatever
+            // ARModeManager last set them to (e.g. showInfoCard=false after a
+            // BohrModel tap), causing the card to stay hidden in ElementInfo mode.
+            var mgr = ARModeManager.Instance;
+            if (mgr != null && _loader != null)
+            {
+                _loader.showInfoCard = (mgr.currentMode == ARModeManager.ARMode.ElementInfo);
+                _loader.showAtom     = (mgr.currentMode == ARModeManager.ARMode.BohrModel);
+            }
+
             // Anchor the card and Bohr model to the cube *before* loading the
             // element data so they pop into existence already attached to the hand.
             AnchorPopupTo(cube);
@@ -380,6 +391,33 @@ namespace PeriodicAR.UI
         {
             if (_heldAtomicNumbers.Count == 0)
             {
+                // If the user is in BohrModel or ElementInfo mode via ARModeManager,
+                // the atom/card was intentionally shown by a button press + tile tap.
+                // A quick grab release (finger tap) must not clear it.
+                // Do NOT call DetachPopup() — that restores the authored scene position
+                // (-1, 1.4, 1) which is off-screen. Instead just stop the per-frame
+                // cube-anchoring and let ImmersiveModeManager reposition properly.
+                var mgr = ARModeManager.Instance;
+                if (mgr != null &&
+                    (mgr.currentMode == ARModeManager.ARMode.BohrModel ||
+                     mgr.currentMode == ARModeManager.ARMode.ElementInfo))
+                {
+                    _currentAnchor = null; // stop UpdateAnchorPositioning from overriding position
+
+                    // Reset positioning guards so PlaceArObjectsNow moves content
+                    // back in front of the camera rather than skipping the reposition.
+                    var imm = ImmersiveModeManager.Instance;
+                    if (imm != null)
+                    {
+                        if (mgr.currentMode == ARModeManager.ARMode.ElementInfo)
+                            imm.NotifyInfoHidden();
+                        if (mgr.currentMode == ARModeManager.ARMode.BohrModel)
+                            imm.NotifyBohrHidden();
+                        imm.PlaceArObjectsNow();
+                    }
+                    return;
+                }
+
                 if (_card != null) _card.HideCard();
                 if (_loader != null && _loader.atomGenerator != null) _loader.atomGenerator.ClearAtom();
                 DetachPopup();
