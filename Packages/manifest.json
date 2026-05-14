@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.gamelovers.mcp-unity": "https://github.com/CoderGamester/mcp-unity.git",
     "com.freetoolsassociation.realtimehand": "file:com.freetoolsassociation.realtimehand",
     "com.freetoolsassociation.swiftsupport": "file:com.freetoolsassociation.swiftsupport",
     "com.unity.cinemachine": "3.1.6",

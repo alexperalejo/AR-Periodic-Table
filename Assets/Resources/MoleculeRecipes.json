@@ -1,0 +1,149 @@
+{
+  "molecules": [
+    {
+      "id": "H2O",
+      "name": "Water",
+      "formula": "H₂O",
+      "geometry": "bent",
+      "bond_angle": 104.5,
+      "atoms": [
+        {"symbol": "O", "position": [0, 0, 0]},
+        {"symbol": "H", "position": [0.96, 0, 0]},
+        {"symbol": "H", "position": [-0.23, 0.93, 0]}
+      ],
+      "bonds": [[0,1],[0,2]],
+      "bond_types": ["single","single"],
+      "polarity": "polar",
+      "formal_charges": [0, 0, 0],
+      "story": "Bent shape (not linear!) because O has 2 lone pairs pushing the H atoms down. Polarity makes it the universal solvent."
+    },
+    {
+      "id": "CO2",
+      "name": "Carbon Dioxide",
+      "formula": "CO₂",
+      "geometry": "linear",
+      "bond_angle": 180.0,
+      "atoms": [
+        {"symbol": "O", "position": [-1.16, 0, 0]},
+        {"symbol": "C", "position": [0, 0, 0]},
+        {"symbol": "O", "position": [1.16, 0, 0]}
+      ],
+      "bonds": [[0,1],[1,2]],
+      "bond_types": ["double","double"],
+      "polarity": "nonpolar",
+      "formal_charges": [0, 0, 0],
+      "story": "Linear and symmetric — the two C=O dipoles cancel exactly. CO₂ is nonpolar despite having polar bonds."
+    },
+    {
+      "id": "NH3",
+      "name": "Ammonia",
+      "formula": "NH₃",
+      "geometry": "trigonal_pyramidal",
+      "bond_angle": 107.0,
+      "atoms": [
+        {"symbol": "N", "position": [0, 0, 0]},
+        {"symbol": "H", "position": [0.94, 0, -0.38]},
+        {"symbol": "H", "position": [-0.47, 0.81, -0.38]},
+        {"symbol": "H", "position": [-0.47, -0.81, -0.38]}
+      ],
+      "bonds": [[0,1],[0,2],[0,3]],
+      "bond_types": ["single","single","single"],
+      "polarity": "polar",
+      "formal_charges": [0, 0, 0, 0],
+      "story": "Lone pair on N causes trigonal pyramidal geometry. The Haber process synthesizes ~150 million tonnes annually for fertilizer."
+    },
+    {
+      "id": "CH4",
+      "name": "Methane",
+      "formula": "CH₄",
+      "geometry": "tetrahedral",
+      "bond_angle": 109.5,
+      "atoms": [
+        {"symbol": "C", "position": [0, 0, 0]},
+        {"symbol": "H", "position": [1.09, 0, 0]},
+        {"symbol": "H", "position": [-0.36, 1.03, 0]},
+        {"symbol": "H", "position": [-0.36, -0.51, 0.89]},
+        {"symbol": "H", "position": [-0.36, -0.51, -0.89]}
+      ],
+      "bonds": [[0,1],[0,2],[0,3],[0,4]],
+      "bond_types": ["single","single","single","single"],
+      "polarity": "nonpolar",
+      "formal_charges": [0, 0, 0, 0, 0],
+      "story": "Perfect tetrahedral symmetry. The 109.5° angle is the natural geometry when 4 electron pairs repel each other equally."
+    },
+    {
+      "id": "O2",
+      "name": "Oxygen",
+      "formula": "O₂",
+      "geometry": "linear",
+      "bond_angle": 180.0,
+      "atoms": [
+        {"symbol": "O", "position": [-0.6, 0, 0]},
+        {"symbol": "O", "position": [0.6, 0, 0]}
+      ],
+      "bonds": [[0,1]],
+      "bond_types": ["double"],
+      "polarity": "nonpolar",
+      "formal_charges": [0, 0],
+      "story": "Diatomic with a double bond. Molecular orbital theory explains why O₂ is paramagnetic (it has unpaired electrons) — something Lewis structures can't show."
+    },
+    {
+      "id": "NaCl",
+      "name": "Sodium Chloride",
+      "formula": "NaCl",
+      "geometry": "ionic",
+      "bond_angle": 0,
+      "atoms": [
+        {"symbol": "Na", "position": [-0.6, 0, 0]},
+        {"symbol": "Cl", "position": [0.6, 0, 0]}
+      ],
+      "bonds": [[0,1]],
+      "bond_types": ["ionic"],
+      "polarity": "ionic",
+      "formal_charges": [1, -1],
+      "story": "Ionic bond — Na donates an electron to Cl. In solution it dissociates into Na⁺ and Cl⁻ ions, making it an electrolyte."
+    },
+    {
+      "id": "C6H6",
+      "name": "Benzene",
+      "formula": "C₆H₆",
+      "geometry": "planar",
+      "bond_angle": 120.0,
+      "atoms": [
+        {"symbol": "C", "position": [1.4, 0, 0]},
+        {"symbol": "C", "position": [0.7, 1.21, 0]},
+        {"symbol": "C", "position": [-0.7, 1.21, 0]},
+        {"symbol": "C", "position": [-1.4, 0, 0]},
+        {"symbol": "C", "position": [-0.7, -1.21, 0]},
+        {"symbol": "C", "position": [0.7, -1.21, 0]},
+        {"symbol": "H", "position": [2.49, 0, 0]},
+        {"symbol": "H", "position": [1.25, 2.16, 0]},
+        {"symbol": "H", "position": [-1.25, 2.16, 0]},
+        {"symbol": "H", "position": [-2.49, 0, 0]},
+        {"symbol": "H", "position": [-1.25, -2.16, 0]},
+        {"symbol": "H", "position": [1.25, -2.16, 0]}
+      ],
+      "bonds": [[0,1],[1,2],[2,3],[3,4],[4,5],[5,0],[0,6],[1,7],[2,8],[3,9],[4,10],[5,11]],
+      "bond_types": ["aromatic","aromatic","aromatic","aromatic","aromatic","aromatic","single","single","single","single","single","single"],
+      "polarity": "nonpolar",
+      "formal_charges": [0,0,0,0,0,0,0,0,0,0,0,0],
+      "story": "Aromatic ring with delocalized π electrons — all C-C bonds are equivalent (between single and double). Foundation of organic chemistry."
+    },
+    {
+      "id": "HCl",
+      "name": "Hydrochloric Acid",
+      "formula": "HCl",
+      "geometry": "linear",
+      "bond_angle": 180.0,
+      "atoms": [
+        {"symbol": "H", "position": [-0.63, 0, 0]},
+        {"symbol": "Cl", "position": [0.63, 0, 0]}
+      ],
+      "bonds": [[0,1]],
+      "bond_types": ["single"],
+      "polarity": "polar",
+      "formal_charges": [0, 0],
+      "story": "Very polar covalent bond — Cl strongly pulls electron density from H. In water it dissociates completely: HCl → H⁺ + Cl⁻."
+    }
+  ]
+}

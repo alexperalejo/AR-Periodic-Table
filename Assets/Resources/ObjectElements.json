@@ -1,0 +1,404 @@
+{
+  "objects": {
+    "person": {
+      "primary": ["C", "O", "H", "N", "Ca"],
+      "trace": ["P", "Fe", "K", "Na", "Mg", "Zn", "Cu", "I", "Se"],
+      "note": "The human body is mostly organic molecules (C,H,O,N), calcium in bones, and iron in hemoglobin."
+    },
+    "bicycle": {
+      "primary": ["Fe", "Al", "C"],
+      "trace": ["Ni", "Cu", "Mn", "Ti", "Cr"],
+      "note": "Steel or aluminium frame, rubber tyres (C), chromium plating, copper brake cables."
+    },
+    "car": {
+      "primary": ["Fe", "Al", "Cu"],
+      "trace": ["C", "Cr", "Ni", "Si", "Pb", "Mn", "Zn"],
+      "note": "Steel body (Fe), aluminium engine, copper wiring, silicon electronics, lead-acid battery."
+    },
+    "motorcycle": {
+      "primary": ["Fe", "Al", "Cu"],
+      "trace": ["C", "Cr", "Ni", "Mn", "Ti"],
+      "note": "Steel or aluminium frame, chrome surfaces, copper electrical system."
+    },
+    "airplane": {
+      "primary": ["Al", "Ti", "Fe"],
+      "trace": ["Ni", "C", "Cu", "Si", "Mg"],
+      "note": "Aluminium fuselage, titanium and nickel in jet engines, carbon-fibre composites in modern aircraft."
+    },
+    "bus": {
+      "primary": ["Fe", "Al", "Cu"],
+      "trace": ["Si", "C", "Pb", "Ni", "Mn"],
+      "note": "Heavy steel body, aluminium trim, copper wiring and motors."
+    },
+    "train": {
+      "primary": ["Fe", "Al", "Cu"],
+      "trace": ["Si", "C", "Mn", "Cr", "Ni"],
+      "note": "Steel rails and body, aluminium cars (modern), copper motors and overhead wires."
+    },
+    "truck": {
+      "primary": ["Fe", "Al", "Cu"],
+      "trace": ["C", "Si", "Pb", "Mn", "Cr"],
+      "note": "Heavy-gauge steel frame, aluminium cab panels, copper wiring, lead-acid battery."
+    },
+    "boat": {
+      "primary": ["Al", "Fe", "C"],
+      "trace": ["Cu", "Zn", "Pb", "Mg", "Si"],
+      "note": "Aluminium or fibreglass (C/Si) hull, steel fittings, zinc sacrificial anodes prevent corrosion."
+    },
+    "traffic light": {
+      "primary": ["Fe", "Al", "Cu"],
+      "trace": ["Si", "Pb", "W", "Zn", "Ni"],
+      "note": "Steel housing, aluminium visor, copper wiring, LEDs contain semiconductors and rare phosphors."
+    },
+    "fire hydrant": {
+      "primary": ["Fe", "Cu"],
+      "trace": ["Br", "Mn", "Si", "Zn"],
+      "note": "Cast iron body, bronze (Cu+Sn) fittings and valve seats."
+    },
+    "stop sign": {
+      "primary": ["Al", "Fe"],
+      "trace": ["Si", "Ti", "Zn", "Cr"],
+      "note": "Aluminium panel, retroreflective coating contains titanium dioxide and glass microspheres (Si)."
+    },
+    "parking meter": {
+      "primary": ["Al", "Fe", "Cu"],
+      "trace": ["Si", "C", "Zn", "Ni"],
+      "note": "Aluminium or stainless steel housing, copper coins, silicon electronics."
+    },
+    "bench": {
+      "primary": ["Fe", "C", "O"],
+      "trace": ["H", "Si", "Al", "Zn", "N"],
+      "note": "Iron or steel frame (urban benches), wooden slats are cellulose (C,H,O), sometimes aluminium."
+    },
+    "bird": {
+      "primary": ["C", "O", "H", "N"],
+      "trace": ["Ca", "P", "Fe", "K", "Mg", "Si", "Na"],
+      "note": "Organic biology: carbon-based tissues, calcium phosphate bones, iron in blood, silica in beak keratin."
+    },
+    "cat": {
+      "primary": ["C", "O", "H", "N"],
+      "trace": ["Ca", "P", "Fe", "K", "Na", "Zn", "Cu"],
+      "note": "Mammalian biology: carbon-based tissues, calcium bones, iron-rich blood, trace minerals."
+    },
+    "dog": {
+      "primary": ["C", "O", "H", "N"],
+      "trace": ["Ca", "P", "Fe", "K", "Na", "Zn", "Cu", "Mg"],
+      "note": "Mammalian biology identical in composition to other vertebrates; iron in haemoglobin."
+    },
+    "horse": {
+      "primary": ["C", "O", "H", "N"],
+      "trace": ["Ca", "P", "Fe", "K", "Na", "Mg", "S"],
+      "note": "Large mammal; keratin in hooves contains sulphur; calcium-rich bones support heavy weight."
+    },
+    "sheep": {
+      "primary": ["C", "O", "H", "N"],
+      "trace": ["Ca", "S", "Fe", "K", "Na", "Zn", "P"],
+      "note": "Wool is keratin, rich in sulphur; biology otherwise typical mammalian composition."
+    },
+    "cow": {
+      "primary": ["C", "O", "H", "N"],
+      "trace": ["Ca", "P", "Fe", "K", "Na", "Mg", "S"],
+      "note": "Mammalian biology; milk production requires extra calcium and phosphorus."
+    },
+    "elephant": {
+      "primary": ["C", "O", "H", "N"],
+      "trace": ["Ca", "P", "Fe", "K", "Na", "Mg", "Mn"],
+      "note": "Tusks are calcium phosphate (hydroxyapatite) with trace manganese giving ivory its colour."
+    },
+    "bear": {
+      "primary": ["C", "O", "H", "N"],
+      "trace": ["Ca", "P", "Fe", "K", "Na", "Zn", "Mg"],
+      "note": "Large omnivore; dense calcium bones, high iron diet from fish and meat."
+    },
+    "zebra": {
+      "primary": ["C", "O", "H", "N"],
+      "trace": ["Ca", "P", "Fe", "K", "Na", "Mg", "S"],
+      "note": "Black-and-white striping from melanin (C,H,N,O,S); standard mammalian biology otherwise."
+    },
+    "giraffe": {
+      "primary": ["C", "O", "H", "N"],
+      "trace": ["Ca", "P", "Fe", "K", "Na", "Mg"],
+      "note": "Tallest land animal; high blood pressure demands a large, calcium-dense skeleton."
+    },
+    "backpack": {
+      "primary": ["C", "N", "H", "O"],
+      "trace": ["Zn", "Al", "Fe", "Si"],
+      "note": "Nylon or polyester (C,H,O,N) shell, aluminium frame stays, zinc or aluminium zippers."
+    },
+    "umbrella": {
+      "primary": ["Fe", "C", "N"],
+      "trace": ["Al", "H", "O", "Si", "Zn"],
+      "note": "Steel or fibreglass ribs, polyester canopy (C,H,N,O), aluminium or steel shaft."
+    },
+    "handbag": {
+      "primary": ["C", "H", "O", "N"],
+      "trace": ["Zn", "Fe", "Au", "Ag", "Si"],
+      "note": "Leather or synthetic fabric; hardware (clasps, zippers) uses zinc alloys, gold or silver plating."
+    },
+    "tie": {
+      "primary": ["C", "H", "N", "O"],
+      "trace": ["Si", "S", "Mg"],
+      "note": "Silk (natural protein, C/H/N/O/S) or polyester (synthetic polymer, C/H/O)."
+    },
+    "suitcase": {
+      "primary": ["Al", "C", "Fe"],
+      "trace": ["Zn", "Si", "H", "N", "O", "Ni"],
+      "note": "Aluminium frame, polycarbonate or nylon shell (C,H,O,N), zinc alloy locks and wheels."
+    },
+    "frisbee": {
+      "primary": ["C", "H", "O"],
+      "trace": ["N", "Cl"],
+      "note": "Injection-moulded polyethylene or nylon — almost entirely carbon, hydrogen, and oxygen."
+    },
+    "skis": {
+      "primary": ["C", "Fe", "Al"],
+      "trace": ["Ti", "Si", "H", "O", "N"],
+      "note": "Carbon-fibre or fibreglass (C,Si) core, steel edges, aluminium or titanium reinforcements."
+    },
+    "snowboard": {
+      "primary": ["C", "Fe", "Al"],
+      "trace": ["Ti", "Si", "H", "O"],
+      "note": "Fibreglass/carbon layers, steel edges, polyethylene base — lightweight composites throughout."
+    },
+    "sports ball": {
+      "primary": ["C", "H", "N", "S"],
+      "trace": ["O", "Si", "Zn"],
+      "note": "Vulcanised rubber (C,H,S) bladder, polyurethane or leather cover. Sulphur cross-links the rubber."
+    },
+    "kite": {
+      "primary": ["C", "H", "N", "O"],
+      "trace": ["Al", "Si", "Fe"],
+      "note": "Polyester or nylon sail (C,H,N,O), fibreglass or aluminium spars, polyester line."
+    },
+    "baseball bat": {
+      "primary": ["C", "H", "O"],
+      "trace": ["Al", "Si", "Fe", "N"],
+      "note": "Ash or maple wood (cellulose C/H/O) or aluminium alloy — both very lightweight materials."
+    },
+    "baseball glove": {
+      "primary": ["C", "H", "O", "N"],
+      "trace": ["S", "Cr", "Fe"],
+      "note": "Tanned leather (collagen C/H/O/N), chromium salts used in tanning, oil conditioner."
+    },
+    "skateboard": {
+      "primary": ["C", "Al", "Fe"],
+      "trace": ["Mn", "Si", "H", "O", "Mg", "Cu"],
+      "note": "Maple wood deck (C/H/O), aluminium trucks, steel axle and bearings."
+    },
+    "surfboard": {
+      "primary": ["C", "Si", "H"],
+      "trace": ["N", "O", "Fe", "Al"],
+      "note": "Polyurethane foam core (C,H,N,O), fibreglass (Si) skin, epoxy resin."
+    },
+    "tennis racket": {
+      "primary": ["C", "Si", "Al"],
+      "trace": ["Ti", "H", "N", "O", "Fe"],
+      "note": "Graphite (C) or carbon-fibre frame, fibreglass (Si), titanium or aluminium reinforcement."
+    },
+    "bottle": {
+      "primary": ["Si", "O", "Na"],
+      "trace": ["Ca", "C", "H", "Al", "Fe"],
+      "note": "Soda-lime glass (Si,O,Na,Ca) or PET plastic (C,H,O). Glass historically contains lead as stabiliser."
+    },
+    "wine glass": {
+      "primary": ["Si", "O", "Na", "Ca"],
+      "trace": ["Pb", "K", "Al", "Fe"],
+      "note": "Soda-lime silicate glass; lead crystal contains PbO for sparkle and weight."
+    },
+    "cup": {
+      "primary": ["Si", "Al", "O"],
+      "trace": ["Ca", "Na", "Fe", "C", "H"],
+      "note": "Ceramic (Si/Al/O) or borosilicate glass; metal cups use stainless steel (Fe/Cr/Ni)."
+    },
+    "fork": {
+      "primary": ["Fe", "Cr", "Ni"],
+      "trace": ["C", "Si", "Mn"],
+      "note": "Stainless steel (18% Cr, 8% Ni in 18-8 grade). Chromium gives corrosion resistance."
+    },
+    "knife": {
+      "primary": ["Fe", "Cr", "C"],
+      "trace": ["Ni", "Si", "Mn", "V"],
+      "note": "Stainless or high-carbon steel blade; higher carbon increases hardness and edge retention."
+    },
+    "spoon": {
+      "primary": ["Fe", "Cr", "Ni"],
+      "trace": ["C", "Si", "Mn"],
+      "note": "18-8 stainless steel identical to fork; chosen for non-reactivity with food."
+    },
+    "bowl": {
+      "primary": ["Si", "Al", "O"],
+      "trace": ["Ca", "Na", "Fe", "C", "H", "Mg"],
+      "note": "Ceramic (porcelain or stoneware) is aluminium silicate; glazes add various metal oxides for colour."
+    },
+    "banana": {
+      "primary": ["K", "C", "O", "H"],
+      "trace": ["Mg", "N", "B", "Mn", "Fe", "P"],
+      "note": "Bananas are famously high in potassium. The carbon-based sugars are the primary energy source."
+    },
+    "apple": {
+      "primary": ["C", "O", "H", "K"],
+      "trace": ["Ca", "Mg", "Fe", "Na", "P", "Cu"],
+      "note": "Mostly water and carbohydrates (C,H,O); potassium and trace minerals in skin and flesh."
+    },
+    "sandwich": {
+      "primary": ["C", "H", "O", "N"],
+      "trace": ["Na", "Cl", "Ca", "Fe", "K", "P", "S"],
+      "note": "Bread (starch C/H/O), protein (N), salt (NaCl), calcium from cheese, iron from meat."
+    },
+    "orange": {
+      "primary": ["C", "O", "H", "K"],
+      "trace": ["Ca", "Mg", "Na", "P", "Fe", "Cl"],
+      "note": "Vitamin C (ascorbic acid) plus flavonoids; citrus pigments contain carotenoids (C/H/O)."
+    },
+    "broccoli": {
+      "primary": ["C", "O", "H", "K"],
+      "trace": ["Ca", "Fe", "S", "Mg", "P", "Na"],
+      "note": "Glucosinolates give broccoli its taste — sulphur-containing compounds (C/H/N/O/S)."
+    },
+    "carrot": {
+      "primary": ["C", "O", "H", "K"],
+      "trace": ["Ca", "Mg", "Na", "P", "Fe", "B"],
+      "note": "Orange colour from beta-carotene (C/H), a precursor to Vitamin A. High potassium."
+    },
+    "hot dog": {
+      "primary": ["C", "H", "O", "N"],
+      "trace": ["Na", "Cl", "Fe", "P", "S", "Zn"],
+      "note": "Processed meat: protein (N), fat (C/H), sodium nitrite preservative, haem iron from muscle."
+    },
+    "pizza": {
+      "primary": ["C", "H", "O", "Na"],
+      "trace": ["Cl", "Ca", "Fe", "Si", "P", "S", "N"],
+      "note": "Flour (C/H/O starch), cheese (Ca, fat), tomato (K), salt (NaCl); silicon from wheat silica bodies."
+    },
+    "donut": {
+      "primary": ["C", "H", "O", "N"],
+      "trace": ["Na", "K", "Ca", "Fe", "P"],
+      "note": "Deep-fried dough: sugars and fats (C/H/O), baking powder (Na), eggs (N/S)."
+    },
+    "cake": {
+      "primary": ["C", "H", "O", "N"],
+      "trace": ["Na", "K", "Ca", "Fe", "P", "S"],
+      "note": "Flour, eggs, sugar, butter — all organic compounds with sodium from baking soda."
+    },
+    "chair": {
+      "primary": ["Fe", "Al", "C"],
+      "trace": ["O", "H", "N", "Si", "Zn"],
+      "note": "Metal frame (Fe or Al), fabric or plastic seat (C/H/O/N). Wood chairs are cellulose."
+    },
+    "couch": {
+      "primary": ["C", "H", "O", "N"],
+      "trace": ["Fe", "Al", "Si", "Zn", "S"],
+      "note": "Foam (polyurethane C/H/O/N), fabric cover, steel spring core, aluminium or wood frame."
+    },
+    "potted plant": {
+      "primary": ["C", "O", "H", "N"],
+      "trace": ["K", "Ca", "Mg", "Fe", "P", "S", "Si", "Mn", "Zn"],
+      "note": "Plant tissue (cellulose C/H/O), chlorophyll (Mg), clay pot (Si/Al/O), fertiliser minerals."
+    },
+    "bed": {
+      "primary": ["Fe", "C", "O", "H"],
+      "trace": ["N", "Al", "Si", "Zn", "Cu"],
+      "note": "Steel spring frame, wood slats (C/H/O), cotton or polyester mattress (C/H/O/N)."
+    },
+    "dining table": {
+      "primary": ["Fe", "Al", "C"],
+      "trace": ["O", "H", "Si", "Cr", "Ni", "Zn"],
+      "note": "Steel or aluminium legs, wood or glass top; stainless or chrome finish."
+    },
+    "toilet": {
+      "primary": ["Si", "Ca", "Al", "O"],
+      "trace": ["Na", "Fe", "Cu", "Cr", "C"],
+      "note": "Vitreous china (Si/Al/O/Ca glaze), chrome-plated brass fittings, copper supply pipes."
+    },
+    "tv": {
+      "primary": ["Si", "Fe", "Al", "Cu"],
+      "trace": ["In", "Sn", "Pb", "Ag", "Nd", "C", "Y"],
+      "note": "Silicon LCD/OLED panel, indium tin oxide (ITO) electrodes, rare-earth phosphors in screen coating."
+    },
+    "laptop": {
+      "primary": ["Si", "Al", "C", "Li"],
+      "trace": ["Cu", "Fe", "Au", "Ni", "Co", "In", "Sn", "Ag", "Mn"],
+      "note": "Silicon chips, aluminium chassis, lithium-ion battery, copper wiring, gold contacts, cobalt cathode."
+    },
+    "mouse": {
+      "primary": ["Si", "Al", "C", "Fe"],
+      "trace": ["Cu", "Cr", "Ni", "Ag"],
+      "note": "Plastic shell (C/H/O/N), silicon sensor and electronics, copper traces, silver switch contacts."
+    },
+    "remote": {
+      "primary": ["Si", "C", "Fe", "Cu"],
+      "trace": ["Ag", "Zn", "Al", "Mn"],
+      "note": "Plastic case (C/H/O), silicon IR sensor, silver contacts, zinc-carbon or alkaline batteries."
+    },
+    "keyboard": {
+      "primary": ["Si", "Al", "C", "Fe"],
+      "trace": ["Cu", "Ag", "Ni", "Cr", "Zn"],
+      "note": "Silicon membrane or mechanical switches, ABS plastic keys (C/H/N), copper PCB traces, silver contacts."
+    },
+    "cell phone": {
+      "primary": ["Si", "Al", "C", "Li"],
+      "trace": ["Cu", "Au", "Ag", "Co", "In", "Sn", "Fe", "Ni", "Ta"],
+      "note": "Silicon SoC, aluminium/glass body, lithium battery, gold bond wires, cobalt cathode, tantalum capacitors."
+    },
+    "microwave": {
+      "primary": ["Fe", "Al", "Cu"],
+      "trace": ["Si", "C", "Ni", "Cr", "Mn", "Mo"],
+      "note": "Stainless steel cavity (Fe/Cr/Ni), aluminium trim, copper magnetron coils, silicon electronics."
+    },
+    "oven": {
+      "primary": ["Fe", "Al", "Ni"],
+      "trace": ["Cu", "Si", "C", "Cr", "Mn", "Mo"],
+      "note": "Stainless steel body (Fe/Cr/Ni), nickel heating elements, aluminium racks."
+    },
+    "toaster": {
+      "primary": ["Fe", "Ni", "Al"],
+      "trace": ["Cu", "Si", "C", "Cr"],
+      "note": "Nichrome (Ni/Cr) resistance wire heats the bread; stainless steel outer shell."
+    },
+    "sink": {
+      "primary": ["Fe", "Cr", "Ni"],
+      "trace": ["Si", "Ca", "Al", "O", "Cu"],
+      "note": "Stainless steel bowl (Fe/Cr/Ni for 304-grade), or porcelain-enamelled cast iron, copper plumbing."
+    },
+    "refrigerator": {
+      "primary": ["Fe", "Al", "Cu"],
+      "trace": ["Si", "C", "Cr", "Ni", "F", "N"],
+      "note": "Steel outer cabinet, aluminium evaporator, copper refrigerant coils, HFCs (C/H/F) as refrigerant."
+    },
+    "book": {
+      "primary": ["C", "O", "H", "N"],
+      "trace": ["Ca", "Si", "Ti", "Al", "Na"],
+      "note": "Cellulose paper (C/H/O), printing ink (C/H/O/N pigments), calcium carbonate filler, TiO₂ whitener."
+    },
+    "clock": {
+      "primary": ["Fe", "Al", "Cu", "Si"],
+      "trace": ["Zn", "Au", "Ag", "Ni", "C", "Mn"],
+      "note": "Steel or brass gears, silicon quartz crystal oscillator, copper coils, gold or silver plating."
+    },
+    "vase": {
+      "primary": ["Si", "O", "Al", "Ca"],
+      "trace": ["Na", "Fe", "Pb", "K", "C"],
+      "note": "Soda-lime glass or ceramic; coloured glazes add metal oxides (Fe for amber, Cu for blue-green)."
+    },
+    "scissors": {
+      "primary": ["Fe", "C", "Cr"],
+      "trace": ["Ni", "Si", "Mn", "V"],
+      "note": "Stainless steel blades (Fe/Cr/Ni); high-carbon steel for sharper, harder edges."
+    },
+    "teddy bear": {
+      "primary": ["C", "H", "O", "N"],
+      "trace": ["Si", "Fe", "S", "Zn"],
+      "note": "Polyester or cotton fabric (C/H/O/N), polyester fiberfill, plastic eyes and nose."
+    },
+    "hair drier": {
+      "primary": ["Fe", "Al", "Cu", "Ni"],
+      "trace": ["Si", "C", "Cr"],
+      "note": "Nichrome (Ni/Cr) heating coil, copper motor windings, aluminium or plastic housing, silicon electronics."
+    },
+    "toothbrush": {
+      "primary": ["C", "H", "N", "O"],
+      "trace": ["Si", "Ti", "Fe", "Cu"],
+      "note": "Polypropylene handle (C/H), nylon bristles (C/H/N/O), titanium dioxide whitener in some bristles."
+    }
+  }
+}

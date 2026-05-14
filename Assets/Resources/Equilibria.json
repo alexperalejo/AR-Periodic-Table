@@ -1,0 +1,87 @@
+{
+  "reactions": [
+    {
+      "id": "haber",
+      "name": "Haber Process",
+      "equation": "N₂ + 3H₂ ⇌ 2NH₃",
+      "reactants": [{"symbol": "N2", "coefficient": 1, "color": "#88CCFF"}, {"symbol": "H2", "coefficient": 3, "color": "#FFFF88"}],
+      "products":  [{"symbol": "NH3", "coefficient": 2, "color": "#AAFFAA"}],
+      "Keq_25C": 6.2e5,
+      "delta_H_kJ": -92.4,
+      "is_exothermic": true,
+      "context": "Industrial synthesis of ammonia for fertilizer. High pressure, moderate temperature (450°C) optimizes yield vs reaction rate.",
+      "le_chatelier_notes": {
+        "increase_pressure":    "More moles on reactant side (4 vs 2) → equilibrium shifts RIGHT, more NH₃.",
+        "decrease_pressure":    "Shifts LEFT, less NH₃.",
+        "increase_temperature": "Exothermic → shifts LEFT, less NH₃.",
+        "decrease_temperature": "Shifts RIGHT, more NH₃ (but slower reaction rate — hence catalysts).",
+        "add_N2":               "Shifts RIGHT, more NH₃ produced."
+      }
+    },
+    {
+      "id": "co2_carbonate",
+      "name": "CO₂ Dissolution",
+      "equation": "CO₂ + H₂O ⇌ H₂CO₃ ⇌ H⁺ + HCO₃⁻",
+      "reactants": [{"symbol": "CO2", "coefficient": 1, "color": "#AAAAAA"}, {"symbol": "H2O", "coefficient": 1, "color": "#5BB0FF"}],
+      "products":  [{"symbol": "H+", "coefficient": 1, "color": "#FF4444"}, {"symbol": "HCO3-", "coefficient": 1, "color": "#88FF88"}],
+      "Keq_25C": 4.3e-7,
+      "delta_H_kJ": -19.0,
+      "is_exothermic": true,
+      "context": "Ocean acidification. More CO₂ in the atmosphere → shifts RIGHT → more H⁺ → oceans become acidic → coral reefs dissolve.",
+      "le_chatelier_notes": {
+        "add_CO2":              "Shifts RIGHT, ocean becomes more acidic.",
+        "remove_CO2":           "Shifts LEFT, ocean becomes more basic.",
+        "increase_temperature": "Shifts LEFT, less dissolution (hot water holds less CO₂).",
+        "add_H+":               "Shifts LEFT, removing carbonate ions — damages shells."
+      }
+    },
+    {
+      "id": "fe_scn",
+      "name": "Iron Thiocyanate",
+      "equation": "Fe³⁺ + SCN⁻ ⇌ FeSCN²⁺",
+      "reactants": [{"symbol": "Fe3+", "coefficient": 1, "color": "#FFAA44"}, {"symbol": "SCN-", "coefficient": 1, "color": "#FFFF88"}],
+      "products":  [{"symbol": "FeSCN2+", "coefficient": 1, "color": "#FF2222"}],
+      "Keq_25C": 1200.0,
+      "delta_H_kJ": -15.0,
+      "is_exothermic": true,
+      "context": "Classic demo: colorless solutions turn blood-red. Adding Fe³⁺ intensifies color; adding Na⁺ dilutes it. Used to study Le Chatelier's Principle visually.",
+      "le_chatelier_notes": {
+        "add_Fe3+":   "Shifts RIGHT, deeper red.",
+        "add_SCN-":   "Shifts RIGHT, deeper red.",
+        "add_NaF":    "F⁻ binds Fe³⁺ → removes reactant → shifts LEFT, color fades.",
+        "dilute":     "Both concentrations decrease — net shift LEFT by reaction quotient."
+      }
+    },
+    {
+      "id": "no2_n2o4",
+      "name": "Dinitrogen Tetroxide",
+      "equation": "2NO₂ ⇌ N₂O₄",
+      "reactants": [{"symbol": "NO2", "coefficient": 2, "color": "#FF8800"}],
+      "products":  [{"symbol": "N2O4", "coefficient": 1, "color": "#FFDDAA"}],
+      "Keq_25C": 8.8,
+      "delta_H_kJ": -57.4,
+      "is_exothermic": true,
+      "context": "Brown NO₂ (dioxide) converts to colorless N₂O₄ (dimer) in the cold. Put the flask in ice → it turns pale. Warm it → turns brown again.",
+      "le_chatelier_notes": {
+        "increase_temperature": "Endothermic in reverse → shifts LEFT, more brown NO₂.",
+        "decrease_temperature": "Shifts RIGHT, more colorless N₂O₄.",
+        "increase_pressure":    "2 moles → 1 mole, shifts RIGHT, more N₂O₄."
+      }
+    },
+    {
+      "id": "synthesis_hcl",
+      "name": "HCl Synthesis",
+      "equation": "H₂ + Cl₂ ⇌ 2HCl",
+      "reactants": [{"symbol": "H2", "coefficient": 1, "color": "#FFFF88"}, {"symbol": "Cl2", "coefficient": 1, "color": "#AAFFAA"}],
+      "products":  [{"symbol": "HCl", "coefficient": 2, "color": "#FFFFFF"}],
+      "Keq_25C": 4.0e31,
+      "delta_H_kJ": -184.6,
+      "is_exothermic": true,
+      "context": "Extremely favorable — Keq ≈ 10³¹. Essentially goes to completion. Shows that very large Keq means the reaction heavily favors products.",
+      "le_chatelier_notes": {
+        "increase_pressure":    "Equal moles on both sides (2 vs 2), no net shift.",
+        "increase_temperature": "Exothermic → shifts LEFT, but Keq is so large it barely matters."
+      }
+    }
+  ]
+}

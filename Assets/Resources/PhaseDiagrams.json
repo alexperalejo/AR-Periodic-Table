@@ -1,0 +1,132 @@
+{
+  "substances": {
+    "H2O": {
+      "name": "Water",
+      "formula": "H₂O",
+      "triple_point": {"T": 273.16, "P": 0.006},
+      "critical_point": {"T": 647.1, "P": 218.3},
+      "melting_at_1atm": 273.15,
+      "boiling_at_1atm": 373.15,
+      "ice_floats": true,
+      "molecule_color": "#5BB0FF",
+      "molecule_radius": 0.003,
+      "boundaries": {
+        "solid_liquid": [[273.16, 0.006], [273.15, 1.0], [271.0, 100.0], [251.0, 2070.0]],
+        "liquid_gas":   [[273.16, 0.006], [323.0, 0.12], [373.15, 1.0],  [473.0, 15.3],  [647.1, 218.3]],
+        "solid_gas":    [[173.0, 0.0001], [233.0, 0.001], [273.16, 0.006]]
+      }
+    },
+    "CO2": {
+      "name": "Carbon Dioxide",
+      "formula": "CO₂",
+      "triple_point": {"T": 216.6, "P": 5.18},
+      "critical_point": {"T": 304.2, "P": 73.8},
+      "melting_at_1atm": -1,
+      "boiling_at_1atm": -1,
+      "ice_floats": false,
+      "molecule_color": "#AAAAAA",
+      "molecule_radius": 0.0035,
+      "boundaries": {
+        "solid_liquid": [[216.6, 5.18], [250.0, 20.0], [273.0, 40.0]],
+        "liquid_gas":   [[216.6, 5.18], [250.0, 17.2], [273.0, 34.8], [304.2, 73.8]],
+        "solid_gas":    [[150.0, 0.01], [190.0, 0.5],  [216.6, 5.18]]
+      }
+    },
+    "N2": {
+      "name": "Nitrogen",
+      "formula": "N₂",
+      "triple_point": {"T": 63.2, "P": 0.124},
+      "critical_point": {"T": 126.2, "P": 33.9},
+      "melting_at_1atm": 63.1,
+      "boiling_at_1atm": 77.4,
+      "ice_floats": false,
+      "molecule_color": "#AACCFF",
+      "molecule_radius": 0.003,
+      "boundaries": {
+        "solid_liquid": [[63.2, 0.124], [65.0, 1.0], [80.0, 50.0]],
+        "liquid_gas":   [[63.2, 0.124], [77.4, 1.0], [100.0, 7.8], [126.2, 33.9]],
+        "solid_gas":    [[40.0, 0.001], [63.2, 0.124]]
+      }
+    },
+    "O2": {
+      "name": "Oxygen",
+      "formula": "O₂",
+      "triple_point": {"T": 54.4, "P": 0.0015},
+      "critical_point": {"T": 154.6, "P": 50.4},
+      "melting_at_1atm": 54.4,
+      "boiling_at_1atm": 90.2,
+      "ice_floats": false,
+      "molecule_color": "#88DDFF",
+      "molecule_radius": 0.003,
+      "boundaries": {
+        "solid_liquid": [[54.4, 0.0015], [56.0, 1.0], [70.0, 10.0]],
+        "liquid_gas":   [[54.4, 0.0015], [90.2, 1.0], [120.0, 10.0], [154.6, 50.4]],
+        "solid_gas":    [[40.0, 0.0001], [54.4, 0.0015]]
+      }
+    },
+    "He": {
+      "name": "Helium",
+      "formula": "He",
+      "triple_point": {"T": 2.18, "P": 0.05},
+      "critical_point": {"T": 5.19, "P": 2.24},
+      "melting_at_1atm": -1,
+      "boiling_at_1atm": 4.22,
+      "ice_floats": false,
+      "molecule_color": "#FFFFAA",
+      "molecule_radius": 0.002,
+      "boundaries": {
+        "solid_liquid": [[2.18, 0.05], [3.0, 10.0], [4.0, 20.0]],
+        "liquid_gas":   [[2.18, 0.05], [4.22, 1.0], [5.19, 2.24]],
+        "solid_gas":    [[1.5, 0.01],  [2.18, 0.05]]
+      }
+    },
+    "Fe": {
+      "name": "Iron",
+      "formula": "Fe",
+      "triple_point": {"T": 1811.0, "P": 1.0},
+      "critical_point": {"T": 9340.0, "P": 10000.0},
+      "melting_at_1atm": 1811.0,
+      "boiling_at_1atm": 3134.0,
+      "ice_floats": false,
+      "molecule_color": "#CCAAAA",
+      "molecule_radius": 0.004,
+      "boundaries": {
+        "solid_liquid": [[1811.0, 1.0], [2000.0, 100.0]],
+        "liquid_gas":   [[1811.0, 1.0], [2500.0, 10.0], [3134.0, 1.0]],
+        "solid_gas":    [[1000.0, 0.001], [1811.0, 1.0]]
+      }
+    },
+    "Hg": {
+      "name": "Mercury",
+      "formula": "Hg",
+      "triple_point": {"T": 234.3, "P": 0.000002},
+      "critical_point": {"T": 1750.0, "P": 1510.0},
+      "melting_at_1atm": 234.3,
+      "boiling_at_1atm": 629.9,
+      "ice_floats": false,
+      "molecule_color": "#DDDDFF",
+      "molecule_radius": 0.004,
+      "boundaries": {
+        "solid_liquid": [[234.3, 0.000002], [234.3, 1.0], [240.0, 100.0]],
+        "liquid_gas":   [[234.3, 0.000002], [400.0, 0.1], [629.9, 1.0]],
+        "solid_gas":    [[150.0, 0.0000001], [234.3, 0.000002]]
+      }
+    },
+    "NaCl": {
+      "name": "Table Salt",
+      "formula": "NaCl",
+      "triple_point": {"T": 1074.0, "P": 1.0},
+      "critical_point": {"T": 3900.0, "P": 390.0},
+      "melting_at_1atm": 1074.0,
+      "boiling_at_1atm": 1686.0,
+      "ice_floats": false,
+      "molecule_color": "#FFDDAA",
+      "molecule_radius": 0.004,
+      "boundaries": {
+        "solid_liquid": [[1074.0, 1.0], [1100.0, 10.0]],
+        "liquid_gas":   [[1074.0, 1.0], [1400.0, 5.0], [1686.0, 1.0]],
+        "solid_gas":    [[700.0, 0.001], [1074.0, 1.0]]
+      }
+    }
+  }
+}

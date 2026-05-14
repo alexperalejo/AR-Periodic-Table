@@ -75,8 +75,8 @@ $beforeTime = if (Test-Path $responseFile) {
     [DateTime]::MinValue
 }
 
-# Write request
-$Command | Out-File -FilePath $requestFile -Encoding UTF8 -NoNewline
+# Write request (use WriteAllText to preserve double quotes — Out-File strips them)
+[System.IO.File]::WriteAllText($requestFile, $Command, (New-Object System.Text.UTF8Encoding $false))
 
 # Poll for response change
 $pollInterval = 0.5  # seconds

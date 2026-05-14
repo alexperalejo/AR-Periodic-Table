@@ -1,0 +1,100 @@
+{
+  "combos": [
+    {
+      "id": "bleach_ammonia",
+      "ingredient_a": "Bleach (NaOCl)",
+      "ingredient_b": "Ammonia (NH₃)",
+      "reaction": "NaOCl + NH₃ → NH₂Cl + NaOH",
+      "hazard": "DEADLY",
+      "hazard_color": "#FF2222",
+      "products": ["Chloramine gas (NH₂Cl)", "Chlorine gas"],
+      "effects": "Toxic chloramine gas causes respiratory damage, chest pain, shortness of breath. High concentrations are fatal.",
+      "common_scenario": "Mixing bleach-based cleaners with ammonia-based glass cleaners or urine.",
+      "advice": "Never mix cleaning products. Use one product at a time. Ventilate well."
+    },
+    {
+      "id": "bleach_acid",
+      "ingredient_a": "Bleach (NaOCl)",
+      "ingredient_b": "Vinegar or any acid",
+      "reaction": "NaOCl + 2HCl → Cl₂ + NaCl + H₂O",
+      "hazard": "DEADLY",
+      "hazard_color": "#FF2222",
+      "products": ["Chlorine gas (Cl₂)"],
+      "effects": "Chlorine gas was used as a chemical weapon in WWI. Causes severe lung damage, pulmonary edema, death.",
+      "common_scenario": "Mixing bleach with 'natural' vinegar cleaners to 'boost' cleaning power.",
+      "advice": "Never mix bleach with any acid, including vinegar, lemon juice, or toilet bowl cleaners."
+    },
+    {
+      "id": "hydrogen_peroxide_vinegar",
+      "ingredient_a": "Hydrogen Peroxide (H₂O₂)",
+      "ingredient_b": "Vinegar (CH₃COOH)",
+      "reaction": "H₂O₂ + CH₃COOH → CH₃CO₃H + H₂O",
+      "hazard": "IRRITANT",
+      "hazard_color": "#FF8800",
+      "products": ["Peracetic acid (CH₃CO₃H)"],
+      "effects": "Peracetic acid is corrosive to skin, eyes, and lungs. Not immediately life-threatening in household concentrations but harmful.",
+      "common_scenario": "Using H₂O₂ and vinegar as natural cleaners at the same time.",
+      "advice": "Use them separately. Apply one, rinse, then the other."
+    },
+    {
+      "id": "bleach_rubbing_alcohol",
+      "ingredient_a": "Bleach (NaOCl)",
+      "ingredient_b": "Rubbing alcohol (isopropanol)",
+      "reaction": "NaOCl + (CH₃)₂CHOH → chloroform + other organochlorines",
+      "hazard": "TOXIC",
+      "hazard_color": "#FF4400",
+      "products": ["Chloroform (CHCl₃)", "Chloroacetone"],
+      "effects": "Chloroform causes dizziness, unconsciousness, liver damage. Chloroacetone is a lachrymatory agent (tear gas component).",
+      "common_scenario": "Disinfecting surfaces with bleach then wiping with alcohol, or mixing sanitizers.",
+      "advice": "Never combine bleach with alcohol-based products."
+    },
+    {
+      "id": "drain_cleaner_acid",
+      "ingredient_a": "Drain cleaner (NaOH/lye)",
+      "ingredient_b": "Acid-based drain cleaner (H₂SO₄)",
+      "reaction": "NaOH + H₂SO₄ → Na₂SO₄ + H₂O + heat",
+      "hazard": "EXPLOSION RISK",
+      "hazard_color": "#FF0000",
+      "products": ["Heat (exothermic reaction)", "Steam"],
+      "effects": "Violently exothermic. Can cause steam explosions that spray caustic liquid. Burns to skin and eyes.",
+      "common_scenario": "Using two different drain cleaners sequentially without rinsing.",
+      "advice": "Use only one drain cleaner. Flush thoroughly with water before using any other product."
+    },
+    {
+      "id": "pool_shock_antifreeze",
+      "ingredient_a": "Pool shock (calcium hypochlorite)",
+      "ingredient_b": "Brake fluid or antifreeze",
+      "reaction": "Ca(OCl)₂ + organics → rapid oxidation",
+      "hazard": "FIRE RISK",
+      "hazard_color": "#FF4400",
+      "products": ["Chlorine gas", "Fire"],
+      "effects": "Strong oxidizer + organic fuel = fire or explosion. The mixture can self-ignite.",
+      "common_scenario": "Improper storage of pool chemicals near automotive fluids.",
+      "advice": "Store pool chemicals in a cool, dry place away from all organic materials."
+    },
+    {
+      "id": "batteries_water",
+      "ingredient_a": "Lead-acid battery acid (H₂SO₄)",
+      "ingredient_b": "Water",
+      "reaction": "H₂SO₄ + H₂O → heat (dilution is exothermic)",
+      "hazard": "CAUTION",
+      "hazard_color": "#FFAA00",
+      "products": ["Steam", "Acid splatter"],
+      "effects": "Adding water to concentrated H₂SO₄ causes violent boiling that splashes acid. Always add acid to water, never water to acid.",
+      "common_scenario": "Battery maintenance, chemistry lab accidents.",
+      "advice": "ALWAYS add acid to water (A to W = Acid to Water). Never the reverse."
+    },
+    {
+      "id": "bleach_heat",
+      "ingredient_a": "Bleach (NaOCl)",
+      "ingredient_b": "Heat or sunlight",
+      "reaction": "2NaOCl → 2NaCl + O₂",
+      "hazard": "CAUTION",
+      "hazard_color": "#FFAA00",
+      "products": ["Oxygen (O₂)", "Sodium chlorate at high temp"],
+      "effects": "Bleach degrades in heat, losing effectiveness and releasing O₂. At very high temperatures, can produce sodium chlorate which is a fire accelerant.",
+      "common_scenario": "Storing bleach near furnaces, in hot garages, or in direct sunlight.",
+      "advice": "Store bleach at room temperature, away from heat and light."
+    }
+  ]
+}

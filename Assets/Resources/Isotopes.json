@@ -1,0 +1,112 @@
+{
+  "isotopes": [
+    {
+      "id": "C-14",
+      "parent_symbol": "C", "mass_number": 14,
+      "half_life_seconds": 1.808e11,
+      "half_life_display": "5,730 years",
+      "decay_mode": "β⁻",
+      "daughter": "N-14",
+      "daughter_color": "#78C0FF",
+      "parent_color": "#FF8C42",
+      "use": "Radiocarbon dating",
+      "story": "Living things constantly exchange carbon with the atmosphere, keeping the ratio of C-14 to C-12 roughly constant. When something dies, C-14 starts decaying. Measuring the remaining ratio tells you how long ago death occurred — this is radiocarbon dating, which has revolutionized archaeology."
+    },
+    {
+      "id": "U-238",
+      "parent_symbol": "U", "mass_number": 238,
+      "half_life_seconds": 1.41e17,
+      "half_life_display": "4.5 billion years",
+      "decay_mode": "α (chain to Pb-206)",
+      "daughter": "Pb-206",
+      "daughter_color": "#9090FF",
+      "parent_color": "#60FF60",
+      "use": "Dating Earth & rocks",
+      "story": "U-238's half-life is roughly the age of the Earth. Half of all the U-238 that existed when Earth formed is still here. The other half has decayed — through a chain of 14 steps — to lead-206. By measuring the U-238 to Pb-206 ratio in ancient zircon crystals, geologists can date rocks to within millions of years."
+    },
+    {
+      "id": "U-235",
+      "parent_symbol": "U", "mass_number": 235,
+      "half_life_seconds": 2.22e16,
+      "half_life_display": "704 million years",
+      "decay_mode": "α (chain to Pb-207)",
+      "daughter": "Pb-207",
+      "daughter_color": "#9090FF",
+      "parent_color": "#AAFF80",
+      "use": "Nuclear fuel & weapons",
+      "story": "U-235 is the only naturally occurring fissile isotope — it can sustain a chain reaction. Natural uranium is only 0.72% U-235; nuclear reactors use enriched uranium (3-5% U-235); weapons use highly enriched uranium (>90%). The 704-million-year half-life means U-235 was far more abundant when Earth formed."
+    },
+    {
+      "id": "K-40",
+      "parent_symbol": "K", "mass_number": 40,
+      "half_life_seconds": 3.94e16,
+      "half_life_display": "1.25 billion years",
+      "decay_mode": "β⁻ / electron capture",
+      "daughter": "Ca-40 / Ar-40",
+      "daughter_color": "#AAD0FF",
+      "parent_color": "#FFD060",
+      "use": "Radiometric dating of rocks",
+      "story": "K-40 decays to both calcium-40 and argon-40. The argon-40 that accumulates in rocks and minerals is used for potassium-argon dating — essential for dating volcanic rocks and establishing the geological timescale. The K-40 in your body also contributes to your natural radiation dose."
+    },
+    {
+      "id": "I-131",
+      "parent_symbol": "I", "mass_number": 131,
+      "half_life_seconds": 693648,
+      "half_life_display": "8.02 days",
+      "decay_mode": "β⁻",
+      "daughter": "Xe-131",
+      "daughter_color": "#C0C0FF",
+      "parent_color": "#FF6060",
+      "use": "Thyroid medicine",
+      "story": "I-131 concentrates in the thyroid because the thyroid uses iodine to make hormones. Doctors use it to image thyroid function or destroy overactive thyroid tissue. Its short half-life means it disappears from the body in weeks. It's also a major concern in nuclear accidents: Chernobyl and Fukushima both released I-131."
+    },
+    {
+      "id": "Tc-99m",
+      "parent_symbol": "Tc", "mass_number": 99,
+      "half_life_seconds": 21601,
+      "half_life_display": "6 hours",
+      "decay_mode": "γ (isomeric transition)",
+      "daughter": "Tc-99",
+      "daughter_color": "#A0A0A0",
+      "parent_color": "#60DDFF",
+      "use": "Medical imaging (40 million scans/year)",
+      "story": "Technetium-99m is the most widely used medical radioisotope in the world. The 'm' stands for 'metastable' — it releases gamma rays without changing element. Its 6-hour half-life is near-perfect: long enough for imaging, short enough that it's mostly gone from the body within a day."
+    },
+    {
+      "id": "H-3",
+      "parent_symbol": "H", "mass_number": 3,
+      "half_life_seconds": 3.888e8,
+      "half_life_display": "12.3 years",
+      "decay_mode": "β⁻",
+      "daughter": "He-3",
+      "daughter_color": "#FFFF80",
+      "parent_color": "#80FFFF",
+      "use": "Nuclear weapons, glow-in-dark signs",
+      "story": "Tritium (H-3) decays to helium-3 with a 12-year half-life. It's used in nuclear weapons as a 'booster' gas, and in self-luminous watch dials and emergency exit signs (tritium glows without batteries). The helium-3 it produces is extremely rare and valuable for scientific instruments."
+    },
+    {
+      "id": "Po-210",
+      "parent_symbol": "Po", "mass_number": 210,
+      "half_life_seconds": 1.196e7,
+      "half_life_display": "138 days",
+      "decay_mode": "α",
+      "daughter": "Pb-206",
+      "daughter_color": "#9090FF",
+      "parent_color": "#FF4040",
+      "use": "Static eliminators, heat sources",
+      "story": "Polonium-210 generates 140 watts per gram from alpha decay — making it valuable as a compact heat source. It was used to assassinate Alexander Litvinenko in 2006 (the first known case of nuclear terrorism on European soil). A gram of Po-210 would kill about 50 million people if dispersed."
+    },
+    {
+      "id": "Sr-90",
+      "parent_symbol": "Sr", "mass_number": 90,
+      "half_life_seconds": 9.1e8,
+      "half_life_display": "28.8 years",
+      "decay_mode": "β⁻",
+      "daughter": "Y-90",
+      "daughter_color": "#FFA0A0",
+      "parent_color": "#FF8060",
+      "use": "Nuclear fallout tracking, cancer therapy",
+      "story": "Strontium-90 was one of the most feared components of nuclear fallout during the Cold War. Because it mimics calcium, it deposits in bones, irradiating bone marrow and causing leukemia. Measuring Sr-90 in baby teeth was used as a public health indicator of fallout exposure in the 1950s-60s."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "compounds": [
+    {"formula": "H2O",   "name": "Water",             "elements": ["H","O"],           "common_in": "Universal solvent, ~60% of body weight"},
+    {"formula": "NaCl",  "name": "Sodium Chloride",   "elements": ["Na","Cl"],         "common_in": "Table salt, ocean water, preserved foods"},
+    {"formula": "C6H12O6","name":"Glucose",            "elements": ["C","H","O"],       "common_in": "Sugar, cellular respiration fuel"},
+    {"formula": "C12H22O11","name":"Sucrose",          "elements": ["C","H","O"],       "common_in": "Table sugar, cane sugar"},
+    {"formula": "C8H18", "name": "Octane",             "elements": ["C","H"],           "common_in": "Gasoline (main component)"},
+    {"formula": "C2H5OH","name": "Ethanol",            "elements": ["C","H","O"],       "common_in": "Alcoholic beverages, hand sanitizer"},
+    {"formula": "CH3COOH","name":"Acetic Acid",        "elements": ["C","H","O"],       "common_in": "Vinegar (~5% solution)"},
+    {"formula": "CaCO3", "name": "Calcium Carbonate", "elements": ["Ca","C","O"],      "common_in": "Limestone, chalk, antacid tablets"},
+    {"formula": "NaHCO3","name": "Sodium Bicarbonate","elements": ["Na","H","C","O"],  "common_in": "Baking soda"},
+    {"formula": "Ca(OH)2","name":"Calcium Hydroxide", "elements": ["Ca","O","H"],      "common_in": "Slaked lime, cement"},
+    {"formula": "H2SO4", "name": "Sulfuric Acid",     "elements": ["H","S","O"],       "common_in": "Car batteries, industrial production"},
+    {"formula": "HCl",   "name": "Hydrochloric Acid", "elements": ["H","Cl"],          "common_in": "Stomach acid, cleaning products"},
+    {"formula": "NaOH",  "name": "Sodium Hydroxide",  "elements": ["Na","O","H"],      "common_in": "Drain cleaner (lye), soap making"},
+    {"formula": "CO2",   "name": "Carbon Dioxide",    "elements": ["C","O"],           "common_in": "Carbonated drinks, fire extinguishers, photosynthesis"},
+    {"formula": "NH3",   "name": "Ammonia",            "elements": ["N","H"],           "common_in": "Fertilizer, cleaning products"},
+    {"formula": "Fe2O3", "name": "Iron(III) Oxide",   "elements": ["Fe","O"],          "common_in": "Rust, iron ore (hematite)"},
+    {"formula": "SiO2",  "name": "Silicon Dioxide",   "elements": ["Si","O"],          "common_in": "Sand, quartz, glass"},
+    {"formula": "Al2O3", "name": "Aluminum Oxide",    "elements": ["Al","O"],          "common_in": "Corundum, ruby, sapphire, alumina"},
+    {"formula": "MgSO4", "name": "Magnesium Sulfate", "elements": ["Mg","S","O"],      "common_in": "Epsom salt, bath salts"},
+    {"formula": "KNO3",  "name": "Potassium Nitrate", "elements": ["K","N","O"],       "common_in": "Gunpowder, fertilizer"},
+    {"formula": "C6H6",  "name": "Benzene",           "elements": ["C","H"],           "common_in": "Industrial solvent, petrochemicals"},
+    {"formula": "C2H4",  "name": "Ethylene",          "elements": ["C","H"],           "common_in": "Plant hormone, plastic (polyethylene) precursor"},
+    {"formula": "CH4",   "name": "Methane",           "elements": ["C","H"],           "common_in": "Natural gas, biogas"},
+    {"formula": "CuSO4", "name": "Copper Sulfate",    "elements": ["Cu","S","O"],      "common_in": "Fungicide, swimming pool algaecide, blue crystals"},
+    {"formula": "MnO2",  "name": "Manganese Dioxide", "elements": ["Mn","O"],          "common_in": "Alkaline batteries, glass coloring"}
+  ]
+}

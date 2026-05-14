@@ -1,0 +1,25 @@
+{
+  "substances": [
+    {"name": "Hydrochloric acid (HCl)",    "formula": "HCl",    "type": "strong_acid",  "ph": 0.0,  "color": "#FF2222", "description": "Strong acid — fully dissociates in water. Found in stomach acid."},
+    {"name": "Sulfuric acid (H₂SO₄)",      "formula": "H2SO4",  "type": "strong_acid",  "ph": 1.0,  "color": "#FF4444", "description": "Battery acid. Industrial uses. Extremely corrosive."},
+    {"name": "Vinegar (CH₃COOH)",          "formula": "CH3COOH","type": "weak_acid",    "ph": 2.9,  "color": "#FFAA44", "description": "Weak acid — only partially dissociates. 5% acetic acid solution."},
+    {"name": "Lemon juice",                "formula": "citric",  "type": "weak_acid",    "ph": 2.0,  "color": "#FFEE44", "description": "Contains citric acid. Sour taste = proton donation to taste receptors."},
+    {"name": "Orange juice",               "formula": "citric",  "type": "weak_acid",    "ph": 3.5,  "color": "#FFAA22", "description": "Citric and ascorbic acids give it pH ~3.5."},
+    {"name": "Black coffee",               "formula": "various", "type": "weak_acid",    "ph": 5.0,  "color": "#8B4513", "description": "Mildly acidic due to organic acids formed during roasting."},
+    {"name": "Rainwater",                  "formula": "H2O+CO2", "type": "weak_acid",    "ph": 5.6,  "color": "#AADDFF", "description": "Slightly acidic because CO₂ dissolves to form carbonic acid."},
+    {"name": "Pure water",                 "formula": "H2O",     "type": "neutral",      "ph": 7.0,  "color": "#DDDDFF", "description": "Neutral pH 7. [H⁺] = [OH⁻] = 10⁻⁷ mol/L."},
+    {"name": "Blood",                      "formula": "plasma",  "type": "weak_base",    "ph": 7.4,  "color": "#FF6666", "description": "Tightly regulated at pH 7.35–7.45 by carbonate buffer system."},
+    {"name": "Baking soda (NaHCO₃)",       "formula": "NaHCO3",  "type": "weak_base",    "ph": 8.3,  "color": "#AAFFAA", "description": "Weak base used in cooking. Reacts with acids to release CO₂."},
+    {"name": "Milk of magnesia",           "formula": "Mg(OH)2", "type": "weak_base",    "ph": 10.5, "color": "#AAFFFF", "description": "Antacid. Neutralizes excess stomach acid."},
+    {"name": "Household ammonia",          "formula": "NH3",     "type": "weak_base",    "ph": 11.0, "color": "#AAFFAA", "description": "Cleaning agent. Weak base, partially ionizes in water."},
+    {"name": "Bleach (NaOCl)",             "formula": "NaOCl",   "type": "strong_base",  "ph": 12.5, "color": "#DDFFDD", "description": "Disinfectant. Highly alkaline. Never mix with acids — produces Cl₂ gas!"},
+    {"name": "Drain cleaner (NaOH)",       "formula": "NaOH",    "type": "strong_base",  "ph": 14.0, "color": "#44FF44", "description": "Lye. Fully dissociates. Saponifies fats, clears drains."}
+  ],
+  "indicators": [
+    {"name": "Litmus",         "acid_color": "#FF4444", "base_color": "#6644FF", "neutral_color": "#AA44AA", "range_low": 6.0, "range_high": 8.0},
+    {"name": "Phenolphthalein","acid_color": "#FFFFFF",  "base_color": "#FF66AA", "neutral_color": "#FFFFFF", "range_low": 8.2, "range_high": 10.0},
+    {"name": "Bromothymol blue","acid_color": "#FFAA00", "base_color": "#2288FF", "neutral_color": "#44BB44","range_low": 6.0, "range_high": 7.6},
+    {"name": "Methyl orange",  "acid_color": "#FF4400",  "base_color": "#FFEE44", "neutral_color": "#FF8800","range_low": 3.1, "range_high": 4.4},
+    {"name": "Universal",      "acid_color": "#FF2200",  "base_color": "#2244FF", "neutral_color": "#44BB44","range_low": 4.0, "range_high": 10.0}
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "experiments": [
+    {
+      "id": "rutherford",
+      "name": "Rutherford Gold Foil (1909)",
+      "scientist": "Ernest Rutherford",
+      "year": 1909,
+      "elements": ["Au", "He"],
+      "summary": "Alpha particles fired at gold foil. Most pass through, a few bounce straight back.",
+      "what_it_proved": "Atoms are mostly empty space with a tiny, dense, positive nucleus.",
+      "surprise": "Before Rutherford, the 'plum pudding' model had electrons embedded in a diffuse positive charge. The bounce-back result was, in Rutherford's words, 'almost as incredible as if you fired 15-inch shells at tissue paper and they came back.'",
+      "animation_hint": "particle_scatter",
+      "color": "#FFD700"
+    },
+    {
+      "id": "millikan",
+      "name": "Millikan Oil Drop (1909)",
+      "scientist": "Robert Millikan",
+      "year": 1909,
+      "elements": [],
+      "summary": "Charged oil droplets suspended between charged plates. Electric force balances gravity at exactly integer multiples of a base charge.",
+      "what_it_proved": "Electric charge is quantized — electrons have a fixed elementary charge of 1.6 × 10⁻¹⁹ C.",
+      "surprise": "Nobody knew if charge could be fractional. This showed charge only comes in discrete packets.",
+      "animation_hint": "oil_drop",
+      "color": "#A0C8FF"
+    },
+    {
+      "id": "bohr_hydrogen",
+      "name": "Bohr Hydrogen Spectrum (1913)",
+      "scientist": "Niels Bohr",
+      "year": 1913,
+      "elements": ["H"],
+      "summary": "Hydrogen gas glows with exact discrete wavelengths — not a continuous rainbow.",
+      "what_it_proved": "Electrons occupy quantized energy levels. Emitting a photon = electron dropping to a lower level.",
+      "surprise": "Classical physics predicted atoms should continuously emit radiation and collapse. Quantized orbits explained why atoms are stable.",
+      "animation_hint": "electron_drop",
+      "color": "#FF6666"
+    },
+    {
+      "id": "curie_radium",
+      "name": "Discovery of Radium (1898)",
+      "scientist": "Marie & Pierre Curie",
+      "year": 1898,
+      "elements": ["Ra", "Po"],
+      "summary": "Processed tons of pitchblende ore to isolate milligrams of two new radioactive elements.",
+      "what_it_proved": "Radioactivity is an atomic property, not a molecular one. New elements could be identified by their radiation.",
+      "surprise": "Marie hand-carried samples in her pockets. Her notebooks are still radioactive and stored in lead-lined boxes in Paris.",
+      "animation_hint": "ore_refine",
+      "color": "#FF88AA"
+    },
+    {
+      "id": "chadwick_neutron",
+      "name": "Chadwick's Neutron (1932)",
+      "scientist": "James Chadwick",
+      "year": 1932,
+      "elements": ["Be", "H"],
+      "summary": "Beryllium bombarded with alpha particles produced a penetrating radiation that could knock protons out of paraffin wax.",
+      "what_it_proved": "Neutrons exist — neutral particles of almost identical mass to protons.",
+      "surprise": "Filled the gap: nuclei contain protons AND neutrons, explaining why atomic mass ≈ 2× atomic number for most elements.",
+      "animation_hint": "neutron_scatter",
+      "color": "#88CCFF"
+    },
+    {
+      "id": "moseley_xray",
+      "name": "Moseley's X-Ray Law (1913)",
+      "scientist": "Henry Moseley",
+      "year": 1913,
+      "elements": [],
+      "summary": "X-ray frequencies from different elements follow a precise law tied to their atomic number, not atomic weight.",
+      "what_it_proved": "Atomic number (proton count) is the fundamental property of an element — not mass.",
+      "surprise": "Predicted the existence of 4 missing elements (gaps at 43, 61, 72, 75). All were later found. Moseley was killed at Gallipoli at age 27.",
+      "animation_hint": "xray_spectrum",
+      "color": "#DDAAFF"
+    },
+    {
+      "id": "hahn_fission",
+      "name": "Nuclear Fission Discovery (1938)",
+      "scientist": "Otto Hahn & Lise Meitner",
+      "year": 1938,
+      "elements": ["U", "Ba", "Kr"],
+      "summary": "Uranium bombarded with neutrons produced barium — a much lighter element. The nucleus had split.",
+      "what_it_proved": "Nuclei can split, releasing enormous energy (E=mc²). The mass difference converts to ~200 MeV per fission.",
+      "surprise": "Hahn was the chemist who discovered it; Meitner (exiled to Sweden) was the physicist who explained it. He won the Nobel; she did not.",
+      "animation_hint": "nucleus_split",
+      "color": "#FFAA44"
+    },
+    {
+      "id": "lavoisier_conservation",
+      "name": "Law of Conservation of Mass (1789)",
+      "scientist": "Antoine Lavoisier",
+      "year": 1789,
+      "elements": ["O", "H", "Hg"],
+      "summary": "Burned mercury in a sealed container. The ash weighed MORE than the mercury — equal to what oxygen the air lost.",
+      "what_it_proved": "Mass is conserved in chemical reactions. Matter cannot be created or destroyed, only rearranged.",
+      "surprise": "Overthrew phlogiston theory. Renamed 'dephlogisticated air' to 'oxygen.' Guillotined during the French Revolution in 1794.",
+      "animation_hint": "sealed_reaction",
+      "color": "#88FFCC"
+    },
+    {
+      "id": "volta_battery",
+      "name": "Voltaic Pile (1800)",
+      "scientist": "Alessandro Volta",
+      "year": 1800,
+      "elements": ["Zn", "Cu", "Ag"],
+      "summary": "Alternating discs of zinc, copper, and brine-soaked cardboard produce a steady electric current.",
+      "what_it_proved": "Chemical reactions can produce electricity. Redox reactions drive electron flow.",
+      "surprise": "The first battery enabled electrolysis — Davy immediately used it to isolate sodium and potassium (1807), elements that had never existed in pure form.",
+      "animation_hint": "electron_flow",
+      "color": "#FFFFAA"
+    }
+  ]
+}
